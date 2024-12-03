@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pritendra Soni - DevOps Engineer Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Previous CSS styles remain the same -->
+    <style>
+        /* Previous styles remain unchanged */
+        .certification-card {
+            background: var(--bg-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        .highlight-list {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .project-card {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Pritendra Soni</h1>
+        <p>DevOps Engineer</p>
+    </section>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I am a DevOps Engineer with a strong focus on automating workflows, optimizing cloud infrastructure, and implementing robust CI/CD pipelines. I thrive on solving complex technical challenges and building scalable systems that drive business efficiency and innovation.</p>
+            
+            <h3 style="margin-top: 2rem;">Professional Highlights</h3>
+            <ul class="highlight-list">
+                <li>Designed and deployed automated CI/CD pipelines using Jenkins, GitHub Actions, and AWS CodePipeline, significantly reducing deployment times and ensuring reliable software releases.</li>
+                <li>Led the containerization of microservices using Docker and orchestrated their deployment with Kubernetes, enhancing scalability and simplifying application management.</li>
+                <li>Implemented Infrastructure as Code (IaC) using Terraform and AWS CloudFormation, automating resource provisioning and ensuring consistent infrastructure environments.</li>
+                <li>Monitored cloud and application performance using tools like AWS CloudWatch, Datadog, and Grafana, establishing alerts and dashboards for proactive issue resolution.</li>
+                <li>Streamlined configuration management by creating reusable Ansible playbooks for system setup and application deployments, improving efficiency and reducing manual errors.</li>
+            </ul>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-aws fa-2x"></i>
+                    <h3>AWS</h3>
+                    <p>EC2, S3, RDS, Lambda, CloudWatch</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-docker fa-2x"></i>
+                    <h3>Docker</h3>
+                    <p>Containerization & Orchestration</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-dharmachakra fa-2x"></i>
+                    <h3>Kubernetes</h3>
+                    <p>Container Orchestration</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-jenkins fa-2x"></i>
+                    <h3>Jenkins</h3>
+                    <p>CI/CD Pipelines</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code-branch fa-2x"></i>
+                    <h3>Terraform</h3>
+                    <p>Infrastructure as Code</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server fa-2x"></i>
+                    <h3>Ansible</h3>
+                    <p>Configuration Management</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Key Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Multi-Environment CI/CD Implementation</h3>
+                    <p>Built a pipeline supporting multiple environments, enabling automated testing and deployment for development, staging, and production environments. Integrated unit testing and monitoring to improve reliability.</p>
+                    <p>Technologies: Jenkins, GitHub Actions, AWS CodePipeline</p>
+                </div>
+                <div class="project-card">
+                    <h3>Containerized Application Migration</h3>
+                    <p>Spearheaded the migration of legacy applications to containerized environments using Docker and Kubernetes, ensuring smoother deployments and scaling capabilities.</p>
+                    <p>Technologies: Docker, Kubernetes, AWS ECS/EKS</p>
+                </div>
+                <div class="project-card">
+                    <h3>Infrastructure Automation for High-Availability Systems</h3>
+                    <p>Automated the deployment of high-availability architectures across AWS regions using Terraform, enhancing uptime and disaster recovery capabilities.</p>
+                    <p>Technologies: Terraform, AWS, CloudFormation</p>
+                </div>
+                <div class="project-card">
+                    <h3>Comprehensive Monitoring and Alerting System</h3>
+                    <p>Set up a monitoring framework for critical systems and applications, utilizing AWS CloudWatch and Datadog to establish performance benchmarks and ensure compliance with SLAs.</p>
+                    <p>Technologies: CloudWatch, Datadog, Grafana</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <h2>Certifications & Academics</h2>
+            <div class="certification-card">
+                <h3>AWS Certified Solutions Architect – Associate</h3>
+            </div>
+            <div class="certification-card">
+                <h3>Education</h3>
+                <p>Bachelor of Technology (B.Tech) – IPU Delhi</p>
+                <p>CGPA: 7.0</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <form class="contact-form" name="contact" netlify>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <div style="text-align: center; margin-top: 2rem;">
+                <p>Email: pritendrasoni@gmail.com</p>
+                <p>Phone: +91 8802634282</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/pritendra-soni/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://medium.com/@pritendrasoni" target="_blank"><i class="fab fa-medium"></i></a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
